@@ -49,6 +49,10 @@
 ;; Exported names start with "typescript-"; private names start with
 ;; "typescript--".
 
+;; ------------------------- wybosys ---------------------------------------------------------
+;; add typescript-1.7 support
+;; -------------------------------------------------------------------------------------------
+
 ;;; Code:
 
 (eval-and-compile
@@ -291,10 +295,12 @@ Match group 1 is the name of the macro.")
      "enum" "export" "extends" "extern" "false" "finally" "for"
      "function" "goto" "if" "implements" "import" "in"
      "instanceof" "interface" "module" "new" "null" "number"
-      "private" "public" "protected" "abstract" "return" "static" "string"
+     "public" "protected" "return" "static" "string"
      "super" "switch"  "this" "throw" "true" 
      "try" "typeof" "var" "void" 
-     "while" ))
+     "while"
+     "private" "abstract" "get" "set"
+     ))
   "Regexp matching any typescript keyword.")
 
 (defconst typescript--basic-type-re
